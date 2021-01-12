@@ -1,0 +1,21 @@
+{
+  "parent": "nekocraft:nekocraft/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:pink_bed"
+    },
+    "title": "回家的诱惑",
+    "description": "使用指令 /home 设置了家",
+    "frame": "task"
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "parent": "nekocraft:nekocraft/chat",
+  "display": {
+    "icon": {
+      "item": "minecraft:sunflower"
+    },
+    "title": "喂? 在吗?",
+    "description": "第一次在聊天框内 @ 别人",
+    "frame": "goal"
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}
