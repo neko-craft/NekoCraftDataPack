@@ -1,0 +1,21 @@
+{
+  "parent": "nekocraft:nekocraft/death",
+  "display": {
+    "icon": {
+      "item": "minecraft:cooked_beef"
+    },
+    "title": "好饿好饿好饿",
+    "description": "被饿死一次",
+    "frame": "goal"
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

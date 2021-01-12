@@ -1,0 +1,30 @@
+{
+  "parent": "nekocraft:nekocraft/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:elytra"
+    },
+    "title": "芜湖起飞",
+    "description": "飞上十万米高空",
+    "frame": "challenge"
+  },
+  "criteria": {
+    "fly": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "position": {
+            "y": {
+              "min": 100000
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "fly"
+    ]
+  ]
+}

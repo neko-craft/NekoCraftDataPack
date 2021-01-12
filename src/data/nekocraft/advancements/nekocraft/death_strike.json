@@ -1,0 +1,21 @@
+{
+  "parent": "nekocraft:nekocraft/death",
+  "display": {
+    "icon": {
+      "item": "minecraft:chain"
+    },
+    "title": "幸运儿",
+    "description": "在雷雨天气被闪电劈死一次",
+    "frame": "goal"
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

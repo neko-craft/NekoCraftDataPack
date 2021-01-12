@@ -1,0 +1,21 @@
+{
+  "parent": "nekocraft:nekocraft/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:wither_rose"
+    },
+    "title": "当场去世",
+    "description": "在游戏中死亡一次",
+    "frame": "task"
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

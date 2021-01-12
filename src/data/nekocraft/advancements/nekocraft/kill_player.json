@@ -1,0 +1,26 @@
+{
+  "parent": "nekocraft:nekocraft/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_sword"
+    },
+    "title": "是他先动的手",
+    "description": "杀死一个玩家 (请先征得他人允许哦)",
+    "frame": "task"
+  },
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "kill"
+    ]
+  ]
+}

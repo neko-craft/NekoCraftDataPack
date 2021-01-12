@@ -1,0 +1,35 @@
+{
+  "parent": "nekocraft:nekocraft/first_step",
+  "display": {
+    "icon": {
+      "item": "minecraft:emerald_block"
+    },
+    "title": "经典卡服设备",
+    "description": "参观堆叠掠夺者农场",
+    "frame": "goal"
+  },
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "position": {
+            "x": {
+              "min": -255,
+              "max": -240
+            },
+            "z": {
+              "min": 1248,
+              "max": 1263
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "enter"
+    ]
+  ]
+}

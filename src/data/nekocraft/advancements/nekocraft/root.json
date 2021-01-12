@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:nether_star"
+    },
+    "title": "NekoCraft",
+    "description": "同意 NekoCraft 用户守则, 从此成为服务器的一员",
+    "background": "minecraft:textures/block/white_concrete.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

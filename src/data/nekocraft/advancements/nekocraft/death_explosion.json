@@ -1,0 +1,21 @@
+{
+  "parent": "nekocraft:nekocraft/death",
+  "display": {
+    "icon": {
+      "item": "minecraft:tnt"
+    },
+    "title": "Boom!",
+    "description": "在爆炸中获得灵魂飞升",
+    "frame": "goal"
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

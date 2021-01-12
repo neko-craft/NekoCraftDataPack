@@ -1,0 +1,21 @@
+{
+  "parent": "nekocraft:nekocraft/death",
+  "display": {
+    "icon": {
+      "item": "minecraft:cactus"
+    },
+    "title": "又细又尖",
+    "description": "被仙人掌或甜浆果丛戳死",
+    "frame": "goal"
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

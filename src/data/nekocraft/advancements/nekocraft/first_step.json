@@ -1,0 +1,21 @@
+{
+  "parent": "nekocraft:nekocraft/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:campfire"
+    },
+    "title": "旅程的开始",
+    "description": "离开出生点",
+    "frame": "task"
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

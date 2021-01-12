@@ -1,0 +1,35 @@
+{
+  "parent": "nekocraft:nekocraft/first_step",
+  "display": {
+    "icon": {
+      "item": "minecraft:lantern"
+    },
+    "title": "放烟花1",
+    "description": "参观第一次新年活动的场地",
+    "frame": "goal"
+  },
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "position": {
+            "x": {
+              "min": -1358,
+              "max": -1225
+            },
+            "z": {
+              "min": -1580,
+              "max": -1407
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "enter"
+    ]
+  ]
+}
