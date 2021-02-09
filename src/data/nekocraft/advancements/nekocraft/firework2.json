@@ -1,0 +1,35 @@
+{
+  "parent": "nekocraft:nekocraft/first_step",
+  "display": {
+    "icon": {
+      "item": "minecraft:soul_lantern"
+    },
+    "title": "放烟花2",
+    "description": "参观第二次新年活动的场地",
+    "frame": "goal"
+  },
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "position": {
+            "x": {
+              "min": 4340,
+              "max": 4389
+            },
+            "z": {
+              "min": 2916,
+              "max": 2975
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "enter"
+    ]
+  ]
+}
