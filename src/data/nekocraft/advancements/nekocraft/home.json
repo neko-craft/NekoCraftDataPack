@@ -5,7 +5,7 @@
       "item": "minecraft:pink_bed"
     },
     "title": "回家的诱惑",
-    "description": "使用指令 /home 设置了家",
+    "description": "使用指令 /sethome 设置了家",
     "frame": "task"
   },
   "criteria": {
