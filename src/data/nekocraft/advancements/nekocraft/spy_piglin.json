@@ -1,0 +1,41 @@
+{
+  "parent": "nekocraft:nekocraft/spy_neko_girl",
+  "display": {
+    "icon": {
+      "item": "minecraft:spyglass"
+    },
+    "title": "这是萌妹吗?",
+    "description": "透过望远镜观察猪灵",
+    "frame": "task"
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:piglin"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}
