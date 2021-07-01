@@ -1,0 +1,43 @@
+{
+  "parent": "nekocraft:nekocraft/spy_neko_girl",
+  "display": {
+    "icon": {
+      "item": "minecraft:spyglass"
+    },
+    "title": "这是RukiaOvO的牛子吗?",
+    "description": "透过望远镜观察牛",
+    "frame": "task",
+    "hidden": true
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:cow",
+                  "nbt": "{CustomName:'{\"text\":\"RukiaOvO的牛子\"}'}"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

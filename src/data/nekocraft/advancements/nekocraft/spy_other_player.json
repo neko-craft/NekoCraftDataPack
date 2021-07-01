@@ -1,0 +1,46 @@
+{
+  "parent": "nekocraft:nekocraft/spy_neko_girl",
+  "display": {
+    "icon": {
+      "item": "minecraft:spyglass"
+    },
+    "title": "这是透过望远镜观察透过望远镜观察玩家的玩家吗?",
+    "description": "透过望远镜观察正在透过望远镜观察其他玩家的玩家",
+    "frame": "goal",
+    "hidden": true
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "player": {
+                    "looking_at": {
+                      "player": { }
+                    }
+                  }
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

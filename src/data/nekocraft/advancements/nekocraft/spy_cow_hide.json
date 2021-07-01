@@ -1,0 +1,46 @@
+{
+  "parent": "nekocraft:nekocraft/spy_cow",
+  "display": {
+    "icon": {
+      "item": "minecraft:spyglass"
+    },
+    "title": "这是消失了的RukiaOvO的牛子吗?",
+    "description": "透过望远镜观察隐身了的牛",
+    "frame": "task",
+    "hidden": true
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "type": "minecraft:cow",
+                  "nbt": "{CustomName:'{\"text\":\"RukiaOvO的牛子\"}'}",
+                  "effects": {
+                    "minecraft:invisibility": { }
+                  }
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}
