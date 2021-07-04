@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:husbandry/ride_a_boat_with_a_minrcart",
+  "display": {
+    "icon": {
+      "item": "minecraft:birch_boat"
+    },
+    "title": "与贝同行",
+    "description": "坐船载着潜影贝来到主世界",
+    "frame": "challenge"
+  },
+  "rewards": {
+    "experience": 65
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:started_riding",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "vehicle": {
+                "type": "minecraft:boat",
+                "passenger": {
+                  "type": "minecraft:shulker"
+                }
+              },
+              "location": {
+                "dimension": "minecraft:overworld"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

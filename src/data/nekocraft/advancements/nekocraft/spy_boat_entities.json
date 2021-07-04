@@ -1,0 +1,100 @@
+{
+  "parent": "nekocraft:nekocraft/spy_other_player",
+  "display": {
+    "icon": {
+      "item": "minecraft:spyglass"
+    },
+    "title": "这是套娃吗?",
+    "description": "坐上一只被被矿车载着的同时载着载着另外一位正在透过望远镜观察你的炽足兽的船载着的猪同时透过望远镜观察另外一位玩家",
+    "frame": "challenge",
+    "hidden": true
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "player": {
+                "looking_at": {
+                  "player": {
+                    "looking_at": {
+                      "player": {
+                        "vehicle": {
+                          "type": "minecraft:strider",
+                          "vehicle": {
+                            "type": "minecraft:boat",
+                            "passenger": {
+                              "type": "minecraft:bot",
+                              "passenger": {
+                                "player": {
+                                  "looking_at": {
+                                    "player": {
+                                      "looking_at": {
+                                        "player": {
+                                          "entity": "this"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "vehicle": {
+                              "type": "minecraft:minecart"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "vehicle": {
+                "type": "minecraft:pig",
+                "vehicle": {
+                  "type": "minecraft:boat",
+                  "passenger": {
+                    "type": "minecraft:strider",
+                    "passenger": {
+                      "player": {
+                        "looking_at": {
+                          "player": {
+                            "looking_at": {
+                              "player": {
+                                "entity": "this"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "vehicle": {
+                    "type": "minecraft:minecart"
+                  }
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "trigger"
+    ]
+  ]
+}

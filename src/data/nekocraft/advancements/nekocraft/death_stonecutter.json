@@ -1,11 +1,11 @@
 {
-  "parent": "nekocraft:nekocraft/death_explosion",
+  "parent": "nekocraft:nekocraft/death_stabbed",
   "display": {
     "icon": {
-      "item": "minecraft:lightning_rod"
+      "item": "minecraft:stonecutter"
     },
-    "title": "幸运儿",
-    "description": "在雷雨天气被闪电劈死一次",
+    "title": "我裂开了",
+    "description": "被切石机锯死一次",
     "frame": "goal"
   },
   "criteria": {

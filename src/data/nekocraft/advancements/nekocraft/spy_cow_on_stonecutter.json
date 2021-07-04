@@ -9,6 +9,9 @@
     "frame": "challenge",
     "hidden": true
   },
+  "rewards": {
+    "experience": 25
+  },
   "criteria": {
     "trigger": {
       "trigger": "minecraft:using_item",
